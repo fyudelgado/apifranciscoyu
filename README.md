@@ -54,19 +54,7 @@ You need to have a python virtual environment for the project that uses python v
 C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu>python -m venv venv
 ```
 
-Enable the virtual enviroment already created
-
-```
-C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu>venv\Scripts\activate
-```
-
-Deploy the application on the directory where you created the venv enviroment, and install the requirements that the application need using the next command
-
-```
-(venv) C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu>pip install -r requirements.txt
-```
-
-Before to start the project, you need to add the next Enviroment Variables on the file C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu\vev\Scripts\activate.bat if you are using Windows at the end of file.
+Before to enable the virtual enviroment, you need to add the next Enviroment Variables on the file C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu\vev\Scripts\activate.bat if you are using Windows at the end of file.
 
 ```
 if not defined FLASK_APP (
@@ -87,6 +75,18 @@ Or /usr/[Home]/[Project]/venv/bin/activate if you are using Linux. With the next
 export FLASK_APP = "entrypoint:app"
 export FLASK_ENV = "development"
 export APP_SETTINGS_MODULE = "config.default"
+```
+
+Enable the virtual enviroment already created
+
+```
+C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu>venv\Scripts\activate
+```
+
+Deploy the application on the directory where you created the venv enviroment, and install the requirements that the application need using the next command
+
+```
+(venv) C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu>pip install -r requirements.txt
 ```
 
 
