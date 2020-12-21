@@ -66,6 +66,30 @@ Deploy the application on the directory where you created the venv enviroment, a
 (venv) C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu>pip install -r requirements.txt
 ```
 
+Before to start the project, you need to add the next Enviroment Variables on the file C:\Users\franciscoyu\PycharmProjects\apifrancsicoyu\vev\Scripts\activate.bat if you are using Windows at the end of file.
+
+```
+if not defined FLASK_APP (
+    set "FLASK_APP=entrypoint:app"
+)
+
+if not defined FLASK_ENV (
+    set "FLASK_ENV=development"
+)
+
+if not defined APP_SETTINGS_MODULE (
+    set "APP_SETTINGS_MODULE=config.default"
+)
+```
+Or /usr/[Home]/[Project]/venv/bin/activate if you are using Linux. With the next lines at the end of file.
+
+```
+export FLASK_APP = "entrypoint:app"
+export FLASK_ENV = "development"
+export APP_SETTINGS_MODULE = "config.default"
+```
+
+
 To populate the SQLite database you need to use the proyect webappfranciscoyu in this <a href="https://github.com/fyudelgado/webappfranciscoyu">link</a>
 
 You could run both proyects and only have the references between both databases. (Only you need to change the port used by each application)
